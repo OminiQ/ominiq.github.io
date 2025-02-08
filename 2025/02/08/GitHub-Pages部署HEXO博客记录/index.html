@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            GitHub Pages部署HEXO博客记录 |
         
         Xcho&#39;s Blog
     </title>
@@ -206,7 +206,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Hello World
+                        GitHub Pages部署HEXO博客记录
                     </div>
                 
 
@@ -234,13 +234,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2025-02-06 13:25:28</span>
+                <span class="datetime">2025-02-08 03:52:12</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Thu Feb 06 2025 13:25:28 GMT+0000">2025-02-06 13:25:28</span>
+                    <span class="datetime" data-updated="Sat Feb 08 2025 08:00:17 GMT+0000">2025-02-08 08:00:17</span>
                 </span>
             
         
@@ -248,11 +248,20 @@
         
 
         
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Hexo/">Hexo</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
 
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>75 Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>799 Words</span>
             </span>
         
         
@@ -271,19 +280,36 @@
                     
 
                     
-                         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                         <p>新年开工，心血来潮部署一个博客来记录生活或者工作的片段。以前部署过 <a class="link"   target="_blank" rel="noopener" href="https://github.com/tangly1024/NotionNext" >notion-next<i class="fas fa-external-link-alt"></i></a> ，但是由于页面太杂乱配置复杂没有坚持下去，直到我看到了 <a class="link"   target="_blank" rel="noopener" href="https://github.com/theme-keep/hexo-theme-keep-starter" >Hexo-theme-keep<i class="fas fa-external-link-alt"></i></a>，简单漂亮</p>
+<h2 id="本地环境安装"><a href="#本地环境安装" class="headerlink" title="本地环境安装"></a>本地环境安装</h2><p>整个安装步骤分两个部分，如果部署在云服务器第一部分就已经可以完成博客的部署，接下来只要开放端口或者代理，配置域名别人就能访问你的博客</p>
+<p>Hexo 是一个基于 Node.js 的静态博客框架，所以需要先安装 Node.js 然后安装博客本体和主题</p>
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><p>因为本地环境为 Linux，我直接使用的是 apt 包管理器安装，如果要使用新版本的话可以使用 NVM (Node Version Manager)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> apt update</span><br><span class="line">$ <span class="built_in">sudo</span> apt install nodejs npm</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>安装完后检查 Node.js 版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
+<h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blogfile</span><br><span class="line">$ <span class="built_in">cd</span> blogfile</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>由于使用 apt 管理器安装 node 遇到权限不足导致无法在系统目录 &#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules 中安装全局 npm 包。以下是解决方案：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> ~/.npm-global <span class="comment">#创建用户级全局安装目录</span></span><br><span class="line">$ npm config <span class="built_in">set</span> prefix <span class="string">&#x27;~/.npm-global&#x27;</span> <span class="comment">#配置 npm 使用此目录</span></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&#x27;export PATH=~/.npm-global/bin:$PATH&#x27;</span> &gt;&gt; ~/.bashrc <span class="comment">#将以下内容添加到 ~/.bashrc</span></span><br><span class="line">$ <span class="built_in">source</span> ~/.bashrc <span class="comment">#应用配置</span></span><br><span class="line">$ npm install hexo-cli -g <span class="comment">#重新安装</span></span><br></pre></td></tr></table></figure>
+<h4 id="安装-Keep-主题"><a href="#安装-Keep-主题" class="headerlink" title="安装 Keep 主题"></a>安装 Keep 主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> blogfile</span><br><span class="line">$ npm install hexo-theme-keep</span><br></pre></td></tr></table></figure>
+<p>Keep 主题安装完成后，在 Hexo 配置文件 _config.yml 中将 theme 设置为 keep。<br>因为使用 NPM 安装 Keep 主题，那么需要把 node_modules&#x2F;hexo-theme-keep&#x2F;_config.yml 路径下的主题配置文件复制到 your-hexo&#x2F;source&#x2F;_data&#x2F;keep.yml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_data</span><br><span class="line">$ <span class="built_in">cp</span> node_modules/hexo-theme-keep/_config.yml <span class="built_in">source</span>/_data/keep.yml</span><br></pre></td></tr></table></figure>
+<h3 id="部署-GitHub-Pages"><a href="#部署-GitHub-Pages" class="headerlink" title="部署 GitHub Pages"></a>部署 GitHub Pages</h3><p>由于没有云服务器，我打算将博客部署在 GitHub Pages，大致思路为将本地的 Hexo 博客生成静态内容，将生成的网页推送的 GitHub 仓库，以后写了博客重新生成一遍再推送就行</p>
+<h4 id="创建-GitHub-仓库"><a href="#创建-GitHub-仓库" class="headerlink" title="创建 GitHub 仓库"></a>创建 GitHub 仓库</h4><p>注意仓库名称为 username.github.io  “username”用 GitHub 账户名替换</p>
+<h4 id="安装配置-git"><a href="#安装配置-git" class="headerlink" title="安装配置 git"></a>安装配置 git</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> apt update</span><br><span class="line">$ <span class="built_in">sudo</span> apt install git</span><br><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
+<p>你需要配置 Git 的用户名和邮箱地址，通常使用与你的 GitHub 账户一致的信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;Your Name&quot;</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;your.email@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p>为了安全地连接 GitHub，需要生成一个 SSH 密钥对，并将公钥添加到 GitHub 上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;your.email@example.com&quot;</span></span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>复制输出的整个公钥。在刚刚创建仓库的 setting ，SSH and GPG keys 菜单添加公钥，然后测试 SSH 连接</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h4 id="推送到-GitHub-仓库"><a href="#推送到-GitHub-仓库" class="headerlink" title="推送到 GitHub 仓库"></a>推送到 GitHub 仓库</h4><p>安装 hexo-deployer-git。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>在 _config.yml 中添加以下配置（如果配置已经存在，将其替换为如下）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;project&gt;</span></span><br><span class="line">  <span class="comment"># example, https://github.com/hexojs/hexojs.github.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+<p>执行 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+<p>浏览 username.github.io 就能查看网站能否运作啦。</p>
 
                     
                 </div>
@@ -292,6 +318,14 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Hexo/">Hexo</a>
+                                    </li>
+                                
+                            </ul>
                         
                     </div>
                     <div>
@@ -304,22 +338,22 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2025/02/08/GitHub-Pages%E9%83%A8%E7%BD%B2HEXO%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"
-                                   title="GitHub Pages部署HEXO博客记录"
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2025/02/06/hello-world/"
+                                   title="Hello World"
                                 >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">GitHub Pages部署HEXO博客记录</span>
-                                        <span class="post-nav-item">Prev posts</span>
+                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
                                     </span>
                                 </a>
                             </div>
-                        
                         
                     </div>
                 
@@ -340,7 +374,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="nav-text">本地环境安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Node-js"><span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Keep-%E4%B8%BB%E9%A2%98"><span class="nav-text">安装 Keep 主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2-GitHub-Pages"><span class="nav-text">部署 GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93"><span class="nav-text">创建 GitHub 仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-git"><span class="nav-text">安装配置 git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93"><span class="nav-text">推送到 GitHub 仓库</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -507,7 +541,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="nav-text">本地环境安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Node-js"><span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Keep-%E4%B8%BB%E9%A2%98"><span class="nav-text">安装 Keep 主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2-GitHub-Pages"><span class="nav-text">部署 GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93"><span class="nav-text">创建 GitHub 仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE-git"><span class="nav-text">安装配置 git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E5%88%B0-GitHub-%E4%BB%93%E5%BA%93"><span class="nav-text">推送到 GitHub 仓库</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
