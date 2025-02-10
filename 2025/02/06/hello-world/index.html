@@ -27,7 +27,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Xcho's Blog","author":"Xcho","avatar":"/images/avatar.png","logo":"/images/apple.png","favicon":"/images/Coda.png"},"menu":{"home":"/","archives":"/archives","tags":"/tags","about":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"黄色的森林分出两条路，我选择人迹更少的那一条，从此决定我一生的道路","hitokoto":true},"social_contact":{"enable":true,"links":{"github":"https://github.com/OminiQ","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["炼气","筑基","结丹","元婴","化神"]},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2025,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Xcho's Blog","author":"Xcho","avatar":"/images/avatar.png","logo":"/images/apple.png","favicon":"/images/Coda.png"},"menu":{"home":"/","archives":"/archives","tags":"/tags","about":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"黄色的森林分出两条路，我选择人迹更少的那一条，从此决定我一生的道路","hitokoto":true},"social_contact":{"enable":true,"links":{"github":"https://github.com/OminiQ","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":["炼气","筑基","结丹","元婴","化神"]},"word_count":{"wordcount":true,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"waline","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":"waline.555212.xyz","reaction":true,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2025,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -328,6 +328,84 @@
                     
 
 
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="waline-comment-container">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/waline/3.3.2/waline.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/waline/3.3.2/waline-meta.css"/>
+        <div id="waline-comment"></div>
+        <script data-pjax>
+          window.KeepCommentPlugin.walineOptions = JSON.parse('{}'.replace(/&#34;/g, '"'))
+          window.KeepCommentPlugin.walineOptions.el = '#waline-comment'
+          window.KeepCommentPlugin.walineOptions.comment = '.post-comments-count'
+          window.KeepCommentPlugin.walineOptions.serverURL = 'waline.555212.xyz'
+          window.KeepCommentPlugin.walineOptions.lang = 'en' || 'zh-CN'
+          window.KeepCommentPlugin.walineOptions.reaction = 'true' === 'true'
+        </script>
+
+        
+
+        
+            <script data-pjax
+                    async
+                    type="module"
+            >
+              import { init } from 'https://cdnjs.cloudflare.com/ajax/libs/waline/3.3.2/waline.js'
+              window.KeepCommentPlugin.initWaline = () => {
+                if (init) {
+                  init(window.KeepCommentPlugin.walineOptions)
+                  window.KeepCommentPlugin.hideLoading()
+                } else {
+                  setTimeout(() => {
+                    window.KeepCommentPlugin.initWaline()
+                  }, 1000)
+                }
+              }
+
+              if ('true' === 'true') {
+                setTimeout(() => {
+                  window.KeepCommentPlugin.initWaline()
+                }, 1200)
+              } else {
+                window.addEventListener('DOMContentLoaded', window.KeepCommentPlugin.initWaline)
+              }
+            </script>
+        
+    </div>
+
+
+        
+    </div>
+
 
 
 
@@ -402,6 +480,11 @@
 
         <!-- PC go comment -->
         
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
 
         <!-- PC full screen -->
         <li class="tools-item flex-center full-screen">
@@ -448,6 +531,10 @@
             </li>
         
 
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
         
 
         <li class="tools-item tool-toggle-show flex-center">
